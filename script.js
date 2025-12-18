@@ -17,7 +17,7 @@ function renderTasks() {
   let list = document.getElementById("taskList");
   list.innerHTML = "";
 
-  for (let i = 0; i <= tasks.length; i++) { 
+  for (let i = 0; i < tasks.length; i++) { 
     let li = document.createElement("li");
     li.className = "list-group-item task-item";
     li.innerText = task[i];
