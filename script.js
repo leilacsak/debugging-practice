@@ -20,7 +20,7 @@ function renderTasks() {
   for (let i = 0; i < tasks.length; i++) { 
     let li = document.createElement("li");
     li.className = "list-group-item task-item";
-    li.innerText = task[i];
+    li.innerText = tasks[i];
 
     li.addEventListener("click", function() {
       li.classList.toggle("done");
