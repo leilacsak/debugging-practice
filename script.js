@@ -34,7 +34,25 @@ function renderTasks() {
       renderTasks();
     };
 
+    
+    let editBtn = document.createElement("button");
+    editBtn.className = "btn btn-sm btn-warning";
+    editBtn.innerText = "Edit";
+    editBtn.onclick = function() {
+      let newTaskText = prompt("Edit task:", tasks[i]);
+      if (newTaskText !== null && newTaskText.length > 0) {
+        tasks[i] = newTaskText;
+        renderTasks();
+      }
+    };
+
     li.appendChild(deleteBtn);
-    list.appendChild(li);
+    list.appendChild(li); 
+    li.appendChild(editBtn);
+    
   }
+
+   
 }
+
+
