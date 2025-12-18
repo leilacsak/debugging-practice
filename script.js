@@ -30,7 +30,7 @@ function renderTasks() {
     deleteBtn.className = "btn btn-sm btn-danger";
     deleteBtn.innerText = "Delete";
     deleteBtn.onclick = function() {
-      tasks.splice(i, 0); 
+      tasks.splice(i, 1); 
       renderTasks();
     };
 
